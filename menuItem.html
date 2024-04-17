@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dettaglio Ricetta</title>
+</head>
+<body class="primaryColor">
+    <div class="background-shapes overflow-y-scroll overflow-x-hidden">
+        <a class="navbar-brand fixed-top" href="home.html">
+            <img src="Resources/LogoIcon.png" alt="Logo" height="80" class="m-3">
+        </a>
+        <br></br>
+        <h1 class="text-center mx-auto display-1 titolo-principale">Find dish</h1>
+        <br></br>
+        <p class="text-center">Inset a dish that you want to eat, and find it in diffrent restaurantes and fastfood menus</p>
+        <form class="d-flex m-4 justify-content-center" onsubmit="return false;" id="recipeForm">
+            <input id="numberOfItems" class="form-control me-3 placeholder-glow rounded-5 width-10 Barshadow" type="number" placeholder="Number of Items" min="1" value="8">
+            <input type="text" id="searchParam" class="form-control me-3 placeholder-glow rounded-5 max-width-50 Barshadow" type="text" placeholder="Enter a plate...">
+            <button onclick="searchMenuItems()" class="btn secondaryColor rounded-5 Barshadow " type="submit">
+                <img src="Resources/SearchIcon.png" alt="Search Icon" height="20" class="icon">
+            </button>
+        </form>
+        
+        <div class="recipe-container" id="itemsContainer">
+        </div>
+        <div id="loader" class="text-center mt-3 loader">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div id="messageContainer" class="text-center"></div>
+        <!--<ul id="menuItemsList" class="list-unstyled"></ul>-->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script_menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Search Ingredients</title>
+</head>
+<body class="primaryColor">
+    <div class="background-shapes overflow-y-scroll overflow-x-hidden m-3">
+        <a class="navbar-brand fixed-top" href="home.html">
+            <img src="Resources/LogoIcon.png" alt="Logo" height="80" class="m-3">
+        </a>
+        <br></br>
+        <h1 class="text-center mx-auto display-1 titolo-principale Titleshadow">Find Recepie by Ingredients</h1>
+        <div class="recipe-container" id="selectedItemsList">
+            <div id="selectedItemsList" class="d-flex flex-wrap justify-content-center"></div>
+        </div>
+        
+        <br></br>
+        <p class="text-center">Select the Ingredients that you what in your recepie</p>
+        <form class="d-flex m-4 justify-content-center" onsubmit="return false;" id="recipeForm">
+            <input type="text" id="searchParam" class="form-control me-3 placeholder-glow rounded-5 max-width-50 Barshadow " type="text" placeholder="Enter a plate...">
+            <button onclick="searchIngredients()" class="btn secondaryColor rounded-5 Barshadow" type="submit">
+                <img src="Resources/SearchIcon.png" alt="Search Icon" height="20" class="icon">
+            </button>
+            <button onclick="seatchRecepie()" class="btn secondaryColor rounded-5 me-3 fontBold Barshadow margin-left" type="submit">
+                <!--CAMBIA GLI INGREDIENTI SOTTO CON RICETTE TROVATE-->
+                Find Recepie
+            </button>
+        </form>
+        
+        <div class="recipe-container" id="itemsContainer">
+        </div>
+        <div id="loader" class="text-center mt-3 loader">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div id="messageContainer" class="text-center"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script_ingredients.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+    "results": [
+    {
+    "id": 10414003,
+    "name": "ale",
+    "image": "ale.png"
+    },
+    {
+    "id": 9037,
+    "name": "avocado",
+    "image": "avocado.jpg"
+    },
+    {
+    "id": 11663,
+    "name": "agar",
+    "image": "white-powder.jpg"
+    },
+    {
+    "id": 10118369,
+    "name": "alum",
+    "image": "white-powder.jpg"
+    },
+    {
+    "id": 99168,
+    "name": "amla",
+    "image": "sliced-amla.jpg"
+    },
+    {
+    "id": 9003,
+    "name": "apple",
+    "image": "apple.jpg"
+    },
+    {
+    "id": 19912,
+    "name": "agave",
+    "image": "agave.png"
+    },
+    {
+    "id": 93758,
+    "name": "aioli",
+    "image": "aioli.jpg"
+    },
+    {
+    "id": 2002,
+    "name": "anise",
+    "image": "aniseed-or-anise.jpg"
+    },
+    {
+    "id": 93693,
+    "name": "ackee",
+    "image": "ackee.png"
+    }
+    ],
+    "offset": 0,
+    "number": 10,
+    "totalResults": 215
+    }

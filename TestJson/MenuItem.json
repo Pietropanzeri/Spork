@@ -1,0 +1,35 @@
+{
+    "type": "menuItem",
+    "menuItems": [
+        {
+            "_id": "bob_evans_chicken_penne_pasta",
+            "id": 227166,
+            "title": "Chicken Penne Pasta",
+            "image": "https://images.spoonacular.com/file/wximages/227166-312x231.jpg",
+            "imageType": "jpg",
+            "restaurantChain": "Bob Evans",
+            "servings": {
+                "number": 1,
+                "size": 754,
+                "unit": "g"
+            }
+        },
+        {
+            "_id": "specialtys_cafe_bakery_tomato_gnocchi_regular",
+            "id": 332841,
+            "title": "Tomato Gnocchi (regular)",
+            "image": "https://spoonacular.com/menuItemImages/gnocchi.jpg",
+            "imageType": "jpg",
+            "restaurantChain": "Specialty's Cafe & Bakery",
+            "servings": {
+                "number": 1,
+                "size": null,
+                "unit": null
+            }
+        }
+    ],
+    "offset": 0,
+    "number": 2,
+    "totalMenuItems": 2361,
+    "processingTimeMs": 164
+}

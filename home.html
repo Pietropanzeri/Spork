@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HomePage</title>
+</head>
+<body class="primaryColor">
+    <div class="background-shapes overflow-y-scroll overflow-x-hidden">
+        <nav class="navbar navbar-expand-sm navbar-collapse">
+            <a class="navbar-brand" href="home.html">
+                <img src="Resources/LogoIcon.png" alt="Logo" height="80" class="m-3">
+            </a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+            <div class="navbar-brand navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item rounded-5 m-3">
+                        <a class="nav-link fontBold Titleshadow" href="menuItem.html">Ristoranti</a>
+                    </li>
+                    <li class="nav-item rounded-5 m-3">
+                        <a class="nav-link fontBold Titleshadow" href="ingredients.html">Ingredienti</a>
+                    </li>
+                    <li class="nav-item rounded-5 m-3">
+                        <a class="nav-link fontBold Titleshadow" href="credits.html">Credits</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>        
+        <h1 class="text-center mx-auto display-1 titolo-principale Titleshadow" >SPORK</h1>
+        <form class="d-flex m-4 justify-content-center" onsubmit="return false;" id="recipeForm">
+            <input id="numberOfItems" class="form-control me-3 placeholder-glow rounded-5 width-10 Barshadow" type="number" placeholder="Number of Items" min="1" value="8">
+            <input id="searchInput" class="form-control me-3 placeholder-glow rounded-5 max-width-50 Barshadow" type="text" placeholder="Search a Recepie" onkeypress="handleKeyPress(event)">
+            <button id="getRecepieButton" class="btn secondaryColor rounded-5 justify-content-center d-flex align-self-center Barshadow" type="submit">
+                <img src="Resources/SearchIcon.png" alt="Search Icon" height="20" class="icon">
+            </button>
+        </form>
+        <div class="recipe-container" id="recipeContainer">
+        </div>
+        <div id="loader" class="text-center mt-3 loader">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <div id="messageContainer" class="text-center"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>
